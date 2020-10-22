@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormlienheComponent } from './formlienhe.component';
+import { FormLienHeComponent } from './form-lien-he.component';
 
-describe('FormlienheComponent', () => {
-  let component: FormlienheComponent;
-  let fixture: ComponentFixture<FormlienheComponent>;
+describe('FormLienHeComponent', () => {
+  let component: FormLienHeComponent;
+  let fixture: ComponentFixture<FormLienHeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ FormlienheComponent ]
+      declarations: [ FormLienHeComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormlienheComponent);
+    fixture = TestBed.createComponent(FormLienHeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
