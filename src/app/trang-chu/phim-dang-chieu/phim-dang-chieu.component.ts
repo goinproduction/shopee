@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 declare var $: any;
 @Component({
@@ -6,10 +6,35 @@ declare var $: any;
   templateUrl: './phim-dang-chieu.component.html',
   styleUrls: ['./phim-dang-chieu.component.css'],
 })
-export class PhimDangChieuComponent implements OnInit {
+export class PhimDangChieuComponent implements OnInit, AfterViewInit {
+  DanhSachPhimDangChieu = [
+    {
+      TenPhim: 'The Walking Dead',
+      HinhAnh:
+        '../../../assets/img/sinh-nhat-chet-choc-happy-death-day-c16-15089876590397.jpg',
+    },
+    { TenPhim: 'Ferdinand', HinhAnh: '../../../assets/img/ferdinand.jpg' },
+    {
+      TenPhim: 'Ngắm Pháo Hoa',
+      HinhAnh:
+        '../../../assets/img/phao-hoa-nen-ngam-tu-duoi-hay-ben-canh-15088436147700.jpg',
+    },
+    {
+      TenPhim: 'Nhóc Ma Siêu Quậy',
+      HinhAnh:
+        '../../../assets/img/nhoc-ma-sieu-quay-the-little-vampire-3d-15090331183157.jpg',
+    },
+    {
+      TenPhim: 'Trải nghiệm điểm chết',
+      HinhAnh:
+        '../../../assets/img/trai-nghiem-diem-chet-flatliners-15093522963475.jpg',
+    },
+  ];
+
   constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  ngAfterViewInit(): void {
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,
@@ -22,7 +47,7 @@ export class PhimDangChieuComponent implements OnInit {
           items: 3,
         },
         1000: {
-          items: 5,
+          items: 4,
         },
       },
     });

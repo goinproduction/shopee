@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 declare var $: any;
 
@@ -7,10 +7,33 @@ declare var $: any;
   templateUrl: './phim-sap-chieu.component.html',
   styleUrls: ['./phim-sap-chieu.component.css'],
 })
-export class PhimSapChieuComponent implements OnInit {
+export class PhimSapChieuComponent implements OnInit, AfterViewInit {
+  DanhSachPhimSapChieu = [
+    {
+      TenPhim: 'Thor: Ragnarok',
+      HinhAnh: '../../../assets/img/thor-ragnarok-15088151416399.jpg',
+    },
+    {
+      TenPhim: 'Ferdinand',
+      HinhAnh:
+        '../../../assets/img/pokemon-to-chon-cau-pokemon-i-choose-you-15095249219579.jpg',
+    },
+    {
+      TenPhim: 'Trùm Hương Cảng',
+      HinhAnh:
+        '../../../assets/img/trum-huong-cang-chasing-the-dragon-15088270130890.jpg',
+    },
+    { TenPhim: 'Ferdinand', HinhAnh: '../../../assets/img/ferdinand.jpg' },
+    {
+      TenPhim: 'Trải nghiệm điểm chết',
+      HinhAnh:
+        '../../../assets/img/trai-nghiem-diem-chet-flatliners-15093522963475.jpg',
+    },
+  ];
   constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  ngAfterViewInit(): void {
     $('.owl-carousel').owlCarousel({
       loop: true,
       margin: 10,
@@ -23,7 +46,7 @@ export class PhimSapChieuComponent implements OnInit {
           items: 3,
         },
         1000: {
-          items: 5,
+          items: 4,
         },
       },
     });

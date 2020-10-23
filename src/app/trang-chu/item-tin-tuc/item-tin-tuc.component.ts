@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-item-tin-tuc',
   templateUrl: './item-tin-tuc.component.html',
-  styleUrls: ['./item-tin-tuc.component.css']
+  styleUrls: ['./item-tin-tuc.component.css'],
 })
 export class ItemTinTucComponent implements OnInit {
+  @Input() Tin;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
