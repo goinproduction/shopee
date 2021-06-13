@@ -4,6 +4,12 @@
   --text-color: #333;
   --primary-color: #ee4d2d;
   --border-color: #dbdbdb;
+
+  --navbar-height: 34px;
+  --header-height: 130px;
+  --header-with-search-height: calc(
+    var(--header-height - var(--navbar-height))
+  );
 }
 
 * {
@@ -42,6 +48,15 @@ html {
   }
 }
 
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+  to {
+    transform: scale(var(--growth-to));
+  }
+}
+
 /* MODAL */
 .modal {
   position: fixed;
@@ -50,6 +65,7 @@ html {
   bottom: 0;
   left: 0;
   display: flex;
+  animation: fadeIn linear 0.1s;
 }
 
 .modal__overlay {
@@ -60,9 +76,12 @@ html {
 }
 
 .modal__body {
+  --grow-from: 0.7;
+  --grow-to: 1;
   margin: auto;
   position: relative;
   z-index: 1;
+  animation: growth linear 0.1s;
 }
 
 /* Button style */
@@ -80,6 +99,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 1.6rem;
 }
 
 .btn.btn--normal:hover {
