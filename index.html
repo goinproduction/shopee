@@ -12,7 +12,7 @@
 
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -266,8 +266,113 @@
                 </div>
             </div>
         </header>
-        <div class="container">
+        <div class="app__container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa fa-list-ul" aria-hidden="true"></i>
+                                Danh Mục
+                            </h3>
+                            <ul class="category__list">
+                                <li class="category-item category-item--active">
+                                    <a href="#" class="category-item__link">TIỆN TÍCH NHÀ CỬA</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">PHỤ KIỆN THÔNG MINH</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">ĐIỆN THOẠI THÔNG MINH</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
 
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fa fa-chevron-down" aria-hidden="true"></i>
+
+                                <!-- LIST OPTIONS -->
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Thấp đến Cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá: Cao đến Thấp</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-num-current">1</span>/2
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="#" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon fa fa-chevron-left" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fa fa-chevron-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <!-- PRODUCT ITEMS -->
+                                    <div class="product-item">
+                                        <div class="product-item__img"
+                                            style="background-image: url(https://cf.shopee.vn/file/fc836ce4234df8c3e05098baf9c0f716_tn)">
+                                            <h4 class="product-item__name">Pin Sạc Dự Phòng Xiaomi Redmi Power Bank
+                                                20000 mAh 18W - Chính hãng- BH 6 tháng</h4>
+                                            <div class="product-item__price">
+                                                <span class="product-item__price-old">470.000đ</span>
+                                                <span class="product-item__price-current">430.000đ</span>
+                                            </div>
+                                            <div class="product-item__action">
+                                                <span class="product-item__like product-item__like--liked">
+                                                    <i class="product-item__like-icon-empty far fa-heart"></i>
+                                                    <i class="product-item__like-icon-fill fas fa-heart"></i>
+                                                </span>
+                                                <div class="product-item__rating">
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="product-item__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <span class="product-item__sold">Đã bán 2,3k</span>
+                                            </div>
+                                            <div class="product-item__origin">
+                                                <span class="product-item__origin-name">
+                                                    Hồ Chí Minh
+                                                </span>
+                                            </div>
+                                            <div class="product-item__favourite">
+                                                <i class="fas fa-check"></i>
+                                                Yêu thích
+                                            </div>
+                                            <div class="product-item__sale-off">
+                                                <span class="product-item__sale-off-percent">10%</span>
+                                                <span class="product-item__sale-off-label">GIẢM</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="footer">
 
