@@ -133,17 +133,113 @@
                         </svg>
                     </div>
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="Đón chờ 18.6 Sale quốc tế ">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Đón chờ 18.6 Sale quốc tế ">
+
+                            <!-- SEARCH HISTORY -->
+                            <div class="header-with-search-history">
+                                <h3 class="header-with-search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header-with-search-history-list">
+                                    <li class="header-with-search-history-item">
+                                        <a href="">Máy phun sương</a>
+                                    </li>
+                                    <li class="header-with-search-history-item">
+                                        <a href="">Quạt hơi nước</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong shop</span>
                             <i class="header__search-select-icon fa fa-chevron-down" aria-hidden="true"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item header__search-option-item--active">
+                                    <span>Trong shop</span>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                </li>
+                            </ul>
                         </div>
                         <button class="header__search-btn">
                             <i class="header__search-btn-icon fa fa-search" aria-hidden="true"></i>
                         </button>
                     </div>
+
+                    <!-- CART HANDLE -->
                     <div class="header__cart">
-                        <i class="header__cart-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span class="header__cart-notice">3</span>
+
+                            <!-- Has no cart header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">Chưa có sản phẩm</span>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- CART ITEM -->
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/0acd87be9eac6788ab3c797e9b0b51ef_tn" alt=""
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Quạt hộp cỡ lớn Senko</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">399.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Lớn</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/5040b2ab2ffae1fc69af22166364bb03_tn" alt=""
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Ghế văn phòng, tựa lưng</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">920.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Đen</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cf.shopee.vn/file/d3c46f355c8a6761e1f0fec4e0aab9b0_tn" alt=""
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Mainboard H61 các hãng</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">361.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">Phân loại: Gigabyte</span>
+                                                <span class="header__cart-item-remove">Xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
